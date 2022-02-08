@@ -92,7 +92,7 @@ function Header() {
                 <img
                   src={session?.user?.image}
                   alt="Profile Pic"
-                  className="h-10 cursor-pointer rounded-full object-contain"
+                  className="h-10 cursor-pointer rounded-full object-cover"
                 />
                 <div className="absolute -top-1 -right-2 hidden h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-red-500 text-xs text-white group-hover:inline-flex">
                   <XCircleIcon />
