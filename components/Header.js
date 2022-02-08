@@ -87,18 +87,15 @@ function Header() {
               {/* TODO: Get rid of for sign in page */}
               <div
                 onClick={signOut}
-                className="group border-2px relative transform rounded-full border-2 border-green-500 transition duration-200 ease-out hover:scale-110 hover:border-red-500"
+                className="group border-2px relative h-10 w-10 transform overflow-hidden rounded-full border-2 border-green-500 transition duration-200 ease-out hover:scale-110 hover:border-red-500"
               >
                 <img
                   src={session?.user?.image}
                   alt="Profile Pic"
                   className="h-10 cursor-pointer rounded-full object-cover"
                 />
-                <div className="absolute -top-1 -right-2 hidden h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-red-500 text-xs text-white group-hover:inline-flex">
+                <div className="absolute top-2 right-2 hidden h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-red-500 text-xs text-white group-hover:inline-flex">
                   <XCircleIcon />
-                </div>
-                <div className="absolute -top-1 -right-2 flex h-5 w-5 cursor-pointer items-center justify-center rounded-full bg-green-500 text-xs text-white group-hover:hidden">
-                  <CheckCircleIcon />
                 </div>
               </div>
             </>
