@@ -70,7 +70,6 @@ function Header() {
           <HomeIcon onClick={() => router.push("/")} className="navBtn" />
           {session ? (
             <>
-              <MenuIcon className="h-6 cursor-pointer md:hidden" />
               <div className="navBtn relative">
                 <PaperAirplaneIcon className="navBtn rotate-45" />
                 {/* NOTES: can rotate heroicons with tailwind^ and div below gives a nice notifications styling */}
@@ -81,7 +80,7 @@ function Header() {
 
               <PlusCircleIcon
                 onClick={() => setOpen(true)}
-                className="navBtn"
+                className="h-6 cursor-pointer transition-all duration-150 ease-out hover:scale-125 md:inline-flex"
               />
               <UserGroupIcon className="navBtn" />
               <HeartIcon className="navBtn" />
